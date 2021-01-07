@@ -60,7 +60,6 @@ class LoginFragment : Fragment(), Injectable, LogInHandler {
 
         viewModel.user.observe(viewLifecycleOwner, Observer { it ->
             it.data?.let {user->
-              sessionManager.saveUserName(user.name)
               findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToNewsFeedFragment
                   (user.id,user.email,user.name,user.githubUsername,user.registeredAt,user.rating))
             }
@@ -68,9 +67,10 @@ class LoginFragment : Fragment(), Injectable, LogInHandler {
     }
 
     private fun isLogin() {
-      sessionManager.fetchUsername()?.let { userName->
-        findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToNewsFeedFragment(userName,userName,userName,userName,userName,userName))
-      }
+      viewModel.isLogin.observe(viewLifecycleOwner, Observer { user->
+         findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToNewsFeedFragment
+           (user.id,user.email,user.name,user.githubUsername,user.registeredAt,user.rating))
+       })
     }
 
     private fun login(view: View) {
@@ -126,8 +126,5 @@ class LoginFragment : Fragment(), Injectable, LogInHandler {
         val imm = activity?.getSystemService(Context.INPUT_METHOD_SERVICE) as? InputMethodManager
         imm?.hideSoftInputFromWindow(windowToken, 0)
     }
-
-
-
 }
 

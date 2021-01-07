@@ -1,7 +1,8 @@
 package com.jsv.socialmediaapp.di
 
-import android.content.Context
-import android.content.SharedPreferences
+import android.app.Application
+import com.jsv.socialmediaapp.service.ISessionManager
+import com.jsv.socialmediaapp.service.SessionManagerImpl
 import com.jsv.socialmediaapp.service.SocialMediaService
 import com.jsv.socialmediaapp.util.Constants
 import com.jsv.socialmediaapp.util.LiveDataCallAdapterFactory
@@ -23,5 +24,11 @@ class AppModule {
             .addCallAdapterFactory(LiveDataCallAdapterFactory())
             .build()
             .create(SocialMediaService::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideSessionManager(application: Application) : ISessionManager {
+        return SessionManagerImpl(application.applicationContext)
     }
 }
