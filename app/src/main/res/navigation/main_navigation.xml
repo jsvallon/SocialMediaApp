@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.jsv.socialmediaapp.view.login.LoginFragment"
+        android:label="LoginFragment">
+
+        <action
+            android:id="@+id/action_loginFragment_to_newsFeedFragment"
+            app:destination="@id/newsFeedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsFeedFragment"
+        android:name="com.jsv.socialmediaapp.view.newsfeed.NewsFeedFragment"
+        android:label="fragment_news_feed"
+        tools:layout="@layout/fragment_news_feed">
+        <argument
+            android:name="id"
+            app:argType="string"/>
+        <argument
+            android:name="email"
+            app:argType="string"/>
+        <argument
+            android:name="name"
+            app:argType="string"/>
+        <argument
+            android:name="githubUsername"
+            app:argType="string"
+            />
+        <argument
+            android:name="registeredAt"
+            app:argType="string"
+            />
+        <argument
+            android:name="rating"
+            app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/postComment"
+        android:name="com.jsv.socialmediaapp.view.postcomment.PostComment"
+        android:label="fragment_post_comment"
+        tools:layout="@layout/fragment_post_comment" />
+</navigation>

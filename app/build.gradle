@@ -103,6 +103,19 @@ dependencies {
     androidTestImplementation deps.arch_core.testing
     androidTestImplementation deps.mockito.core
     androidTestImplementation deps.mockito.android
+
+
+    // Retrofit for networking
+//    implementation "com.squareup.retrofit2:retrofit:$version_retrofit"
+//    implementation "com.squareup.retrofit2:converter-moshi:$version_retrofit"
+//    implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:$version_retrofit_coroutines_adapter"
+//    implementation "com.squareup.retrofit2:converter-scalars:$version_retrofit"
+//    implementation "com.squareup.retrofit2:converter-gson:$version_retrofit"
+//    implementation "com.squareup.retrofit2:adapter-rxjava2:$version_retrofit"
+//
+//    implementation "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
+//    implementation "io.reactivex.rxjava2:rxandroid:$version_rxandroid"
+
 }
 
 // we need all open to run tests which we enable only for debug builds.
