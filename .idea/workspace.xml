@@ -5,6 +5,10 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="efc2daf8-f6e5-4350-b61c-d771ec2e2f0c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +32,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
+        <option value="valueResourceFile" />
+        <option value="navigationResourceFile" />
+        <option value="Kotlin Enum" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -43,11 +51,24 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HgIgnore" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.kotlin.data.view" />
   </component>
   <component name="RecentsManager">
+    <key name="android.template.-1806285849">
+      <recent name="com.jsv.socialmediaapp.view.splash" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.jsv.socialmediaapp.util" />
+      <recent name="com.jsv.socialmediaapp.request" />
+      <recent name="com.jsv.socialmediaapp.response" />
+    </key>
     <key name="android.template.-955286122">
       <recent name="com.jsv.socialmediaapp.view.login" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
     </key>
   </component>
   <component name="RunManager">
@@ -122,5 +143,67 @@
       <updated>1609771885742</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1985" y="293" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1609901875252">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1985" y="293" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1609901875252" />
+    <state x="2046" y="351" key="#com.intellij.ide.util.MemberChooser" timestamp="1609926602492">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2046" y="351" key="#com.intellij.ide.util.MemberChooser/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1609926602492" />
+    <state x="1978" y="285" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609918398343">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1978" y="285" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1609918398342" />
+    <state x="2014" y="192" width="452" height="681" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1609871155991">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2014" y="192" width="452" height="681" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1609871155991" />
+    <state x="1828" y="293" key="AndroidCreateResourceFileDialog" timestamp="1609798604424">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1828" y="293" key="AndroidCreateResourceFileDialog/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1609798604424" />
+    <state x="2099" y="386" key="AndroidCreateXmlResourceDialog" timestamp="1609798092697">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2099" y="386" key="AndroidCreateXmlResourceDialog/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1609798092697" />
+    <state width="1878" height="234" key="GridCell.Tab.0.bottom" timestamp="1610007358204">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="234" key="GridCell.Tab.0.bottom/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610007358204" />
+    <state width="1878" height="234" key="GridCell.Tab.0.center" timestamp="1610007358202">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="234" key="GridCell.Tab.0.center/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610007358202" />
+    <state width="1878" height="234" key="GridCell.Tab.0.left" timestamp="1610007358201">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="234" key="GridCell.Tab.0.left/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610007358201" />
+    <state width="1878" height="234" key="GridCell.Tab.0.right" timestamp="1610007358204">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="234" key="GridCell.Tab.0.right/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610007358204" />
+    <state width="1878" height="356" key="GridCell.Tab.1.bottom" timestamp="1609990611831">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="356" key="GridCell.Tab.1.bottom/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1609990611831" />
+    <state width="1878" height="356" key="GridCell.Tab.1.center" timestamp="1609990611826">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="356" key="GridCell.Tab.1.center/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1609990611826" />
+    <state width="1878" height="356" key="GridCell.Tab.1.left" timestamp="1609990611825">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="356" key="GridCell.Tab.1.left/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1609990611823" />
+    <state width="1878" height="356" key="GridCell.Tab.1.right" timestamp="1609990611827">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="356" key="GridCell.Tab.1.right/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1609990611827" />
+    <state x="2032" y="316" key="chooseDestDirectoryDialog" timestamp="1609901124940">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2032" y="316" key="chooseDestDirectoryDialog/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1609901124940" />
   </component>
 </project>
