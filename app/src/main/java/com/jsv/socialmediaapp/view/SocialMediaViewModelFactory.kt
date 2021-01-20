@@ -1,9 +1,7 @@
 package com.jsv.socialmediaapp.view
 
-import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.jsv.socialmediaapp.viewmodel.LoginFragmentViewModel
 import javax.inject.Inject
 import javax.inject.Provider
 import javax.inject.Singleton
@@ -21,25 +19,3 @@ class SocialMediaViewModelFactory @Inject constructor(
         return creator.get() as T
     }
 }
-
-
-//
-//class SocialMediaViewModelFactory(
-//    private val application: Application
-//) : ViewModelProvider.Factory {
-//
-//    @Suppress("unchecked_cast")
-//    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-//        if (modelClass.isAssignableFrom(LoginFragmentViewModel::class.java)) {
-//            return LoginFragmentViewModel(
-//                application
-//            ) as T
-//        }
-//        if (modelClass.isAssignableFrom(LoginFragmentViewModel::class.java)) {
-//            return LoginFragmentViewModel(application) as T
-//        }
-//        throw IllegalArgumentException("Unknown ViewModel class")
-//    }
-//
-//}
-//

@@ -11,5 +11,4 @@ class FragmentBindingLogin @Inject constructor(val fragment: Fragment) {
     fun bindEmail(editText: EditText, txt: String?) {
         editText.setText(txt)
     }
-
 }

@@ -36,29 +36,28 @@ abstract class NetworkBoundResource<ResultType, RequestType>
             when (response) {
                 is ApiSuccessResponse -> {
                     appExecutors.disk().execute {
-                        processResponse(response)
+                        saveCallResult(processResponse(response))
                         appExecutors.mainThread().execute {
-                            result.addSource(convertItem(response.body)) { newData ->
-                               setValue(Resource.success(newData))
+                            result.addSource(loadFromShaPref()) { newData->
+                                // if(newData.)
+                                setValue(Resource.success(newData))
                             }
                         }
                     }
                 }
                 is ApiEmptyResponse -> {
                     appExecutors.mainThread().execute {
-
-                        // reload from disk whatever we had
-//                        result.addSource(loadFromDb()) { newData ->
-                           // setValue(Resource.success(newData))
-//                        }
+                        // Get data from Sharpref
+                        result.addSource(loadFromShaPref()) { newData ->
+                            setValue(Resource.success(newData))
+                        }
                     }
                 }
                 is ApiErrorResponse -> {
                     onFetchFailed()
-//                    result.addSource(convertItem(LiveData<ResultType>())) { newData ->
-//                        setValue(Resource.error(response.errorMessage, newData))
-//                    }
-                    //setValue(Resource.error(response.errorMessage, newData))
+                    result.addSource(loadFromShaPref()) { newData ->
+                        setValue(Resource.error(response.errorMessage, newData))
+                    }
                 }
             }
         }
@@ -71,8 +70,11 @@ abstract class NetworkBoundResource<ResultType, RequestType>
     @WorkerThread
     protected open fun processResponse(response: ApiSuccessResponse<RequestType>) = response.body
 
+    @WorkerThread
+    protected abstract fun saveCallResult(item: RequestType)
+
     @MainThread
-    protected abstract fun convertItem(item: RequestType): LiveData<ResultType>
+    protected abstract fun loadFromShaPref(): LiveData<ResultType>
 
     @MainThread
     protected abstract fun apiCall(): LiveData<ApiResponse<RequestType>>

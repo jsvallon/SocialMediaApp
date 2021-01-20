@@ -25,7 +25,6 @@ class LoginFragmentViewModel
     val loginRequest: LiveData<LoginRequest>
         get() = _loginRequest
 
-
     val user: LiveData<Resource<User>> = _loginRequest.switchMap { login ->
         if (login == null) {
             AbsentLiveData.create()
@@ -33,6 +32,9 @@ class LoginFragmentViewModel
             userRepository.getUsers(LoginRequest(email = login.email, password = login.password))
         }
     }
+
+    val isLogin: LiveData<User> = userRepository.isLogin()
+
 
     fun setLogin(email: String, password: String) {
       if (validEmailAndPassword(email.toLowerCase(Locale.getDefault()).trim(), password.toLowerCase(Locale.getDefault()).trim()) ) {
