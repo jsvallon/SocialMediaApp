@@ -38,7 +38,8 @@ abstract class NetworkBoundResource<ResultType, RequestType>
                     appExecutors.disk().execute {
                         saveCallResult(processResponse(response))
                         appExecutors.mainThread().execute {
-                            result.addSource(loadFromShaPref()) { newData ->
+                            result.addSource(loadFromShaPref()) { newData->
+                                // if(newData.)
                                 setValue(Resource.success(newData))
                             }
                         }

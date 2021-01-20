@@ -5,4 +5,15 @@
     <string name="email">Email</string>
     <string name="login">Login</string>
     <string name="password">Password</string>
+
+    <string name="search">Search</string>
+    <string name="favorites">Favorites</string>
+    <string name="img_description">Image description</string>
+    <string name="loading_error">An error occur while loading</string>
+    <string name="name_str">proin magma</string>
+    <string name="image_content">Image content</string>
+    <string name="description">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s</string>
+    <string name="language">Langue:</string>
+    <string name="language_value">luctus</string>
+    <string name="textview">TextView</string>
 </resources>

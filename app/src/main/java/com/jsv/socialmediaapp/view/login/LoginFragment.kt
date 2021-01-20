@@ -29,9 +29,6 @@ class LoginFragment : Fragment(), Injectable, LogInHandler {
     @Inject
     lateinit var appExecutors: AppExecutors
 
-    @Inject
-    lateinit var sessionManager :  ISessionManager
-
 
     var  binding by autoCleared<FragmentLoginBinding>()
 

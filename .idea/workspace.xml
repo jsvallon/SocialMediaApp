@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
@@ -35,9 +35,9 @@
         <option value="valueResourceFile" />
         <option value="navigationResourceFile" />
         <option value="Kotlin Enum" />
+        <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
         <option value="Kotlin File" />
-        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -149,10 +149,14 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1985" y="293" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1609901875252" />
-    <state x="2046" y="351" key="#com.intellij.ide.util.MemberChooser" timestamp="1610058435639">
+    <state x="2046" y="351" key="#com.intellij.ide.util.MemberChooser" timestamp="1610129789882">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state x="2046" y="351" key="#com.intellij.ide.util.MemberChooser/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610058435639" />
+    <state x="2046" y="351" key="#com.intellij.ide.util.MemberChooser/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610129789882" />
+    <state x="1758" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610085223794">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1758" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610085223794" />
     <state x="1978" y="285" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609918398343">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
@@ -169,41 +173,87 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="2099" y="386" key="AndroidCreateXmlResourceDialog/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1609798092697" />
-    <state width="1877" height="372" key="GridCell.Tab.0.bottom" timestamp="1610059089142">
+    <state width="535" height="466" key="DebuggerActiveHint" timestamp="1610209571126">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state width="1877" height="372" key="GridCell.Tab.0.bottom/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610059089142" />
-    <state width="1877" height="372" key="GridCell.Tab.0.center" timestamp="1610059089141">
+    <state width="535" height="466" key="DebuggerActiveHint/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610209571126" />
+    <state x="1379" y="123" width="1720" height="817" key="DiffContextDialog" timestamp="1610209604809">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state width="1877" height="372" key="GridCell.Tab.0.center/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610059089141" />
-    <state width="1877" height="372" key="GridCell.Tab.0.left" timestamp="1610059089140">
+    <state x="1379" y="123" width="1720" height="817" key="DiffContextDialog/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610209604809" />
+    <state width="1282" height="194" key="GridCell.Tab.0.bottom" timestamp="1610406933954">
+      <screen x="0" y="23" width="1280" height="737" />
+    </state>
+    <state width="1238" height="153" key="GridCell.Tab.0.bottom/0.23.1280.737@0.23.1280.737" timestamp="1610236593006" />
+    <state width="1282" height="194" key="GridCell.Tab.0.bottom/1280.23.1920.1057/0.23.1280.737@0.23.1280.737" timestamp="1610406933954" />
+    <state width="1878" height="153" key="GridCell.Tab.0.bottom/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610259220442" />
+    <state width="1282" height="194" key="GridCell.Tab.0.center" timestamp="1610406933953">
+      <screen x="0" y="23" width="1280" height="737" />
+    </state>
+    <state width="1238" height="153" key="GridCell.Tab.0.center/0.23.1280.737@0.23.1280.737" timestamp="1610236593005" />
+    <state width="1282" height="194" key="GridCell.Tab.0.center/1280.23.1920.1057/0.23.1280.737@0.23.1280.737" timestamp="1610406933953" />
+    <state width="1878" height="153" key="GridCell.Tab.0.center/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610259220441" />
+    <state width="1282" height="194" key="GridCell.Tab.0.left" timestamp="1610406933951">
+      <screen x="0" y="23" width="1280" height="737" />
+    </state>
+    <state width="1238" height="153" key="GridCell.Tab.0.left/0.23.1280.737@0.23.1280.737" timestamp="1610236593004" />
+    <state width="1282" height="194" key="GridCell.Tab.0.left/1280.23.1920.1057/0.23.1280.737@0.23.1280.737" timestamp="1610406933951" />
+    <state width="1878" height="153" key="GridCell.Tab.0.left/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610259220440" />
+    <state width="1282" height="194" key="GridCell.Tab.0.right" timestamp="1610406933953">
+      <screen x="0" y="23" width="1280" height="737" />
+    </state>
+    <state width="1238" height="153" key="GridCell.Tab.0.right/0.23.1280.737@0.23.1280.737" timestamp="1610236593005" />
+    <state width="1282" height="194" key="GridCell.Tab.0.right/1280.23.1920.1057/0.23.1280.737@0.23.1280.737" timestamp="1610406933953" />
+    <state width="1878" height="153" key="GridCell.Tab.0.right/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610259220442" />
+    <state width="1878" height="370" key="GridCell.Tab.1.bottom" timestamp="1610252050787">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state width="1877" height="372" key="GridCell.Tab.0.left/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610059089140" />
-    <state width="1877" height="372" key="GridCell.Tab.0.right" timestamp="1610059089142">
+    <state width="1238" height="238" key="GridCell.Tab.1.bottom/0.23.1280.737@0.23.1280.737" timestamp="1610235996902" />
+    <state width="1878" height="370" key="GridCell.Tab.1.bottom/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610252050787" />
+    <state width="1878" height="370" key="GridCell.Tab.1.center" timestamp="1610252050786">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state width="1877" height="372" key="GridCell.Tab.0.right/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610059089142" />
-    <state width="1877" height="372" key="GridCell.Tab.1.bottom" timestamp="1610059089149">
+    <state width="1238" height="238" key="GridCell.Tab.1.center/0.23.1280.737@0.23.1280.737" timestamp="1610235996901" />
+    <state width="1878" height="370" key="GridCell.Tab.1.center/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610252050786" />
+    <state width="1878" height="370" key="GridCell.Tab.1.left" timestamp="1610252050786">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state width="1877" height="372" key="GridCell.Tab.1.bottom/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610059089149" />
-    <state width="1877" height="372" key="GridCell.Tab.1.center" timestamp="1610059089147">
+    <state width="1238" height="238" key="GridCell.Tab.1.left/0.23.1280.737@0.23.1280.737" timestamp="1610235996901" />
+    <state width="1878" height="370" key="GridCell.Tab.1.left/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610252050786" />
+    <state width="1878" height="370" key="GridCell.Tab.1.right" timestamp="1610252050786">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state width="1877" height="372" key="GridCell.Tab.1.center/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610059089147" />
-    <state width="1877" height="372" key="GridCell.Tab.1.left" timestamp="1610059089143">
+    <state width="1238" height="238" key="GridCell.Tab.1.right/0.23.1280.737@0.23.1280.737" timestamp="1610235996902" />
+    <state width="1878" height="370" key="GridCell.Tab.1.right/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610252050786" />
+    <state width="960" height="528" key="XDebugger.FullValuePopup" timestamp="1610252043881">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state width="1877" height="372" key="GridCell.Tab.1.left/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610059089143" />
-    <state width="1877" height="372" key="GridCell.Tab.1.right" timestamp="1610059089148">
-      <screen x="1280" y="23" width="1920" height="1057" />
-    </state>
-    <state width="1877" height="372" key="GridCell.Tab.1.right/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610059089148" />
+    <state width="640" height="369" key="XDebugger.FullValuePopup/0.23.1280.737@0.23.1280.737" timestamp="1610235471577" />
+    <state width="960" height="528" key="XDebugger.FullValuePopup/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1610252043881" />
     <state x="2032" y="316" key="chooseDestDirectoryDialog" timestamp="1609901124940">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="2032" y="316" key="chooseDestDirectoryDialog/1280.23.1920.1057/0.23.1280.737@1280.23.1920.1057" timestamp="1609901124940" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/jsv/socialmediaapp/repository/NetworkBoundResourceWithWithOutSave.kt</url>
+          <line>59</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/jsv/socialmediaapp/repository/NetworkBoundResourceWithWithOutSave.kt</url>
+          <line>50</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/jsv/socialmediaapp/view/PostAdapter.kt</url>
+          <line>45</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
